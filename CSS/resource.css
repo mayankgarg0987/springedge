@@ -1,0 +1,30 @@
+body
+{
+margin: 0;
+text-align:left;
+font-family: sans-serif;
+}
+h1
+{
+font-family: Tahoma, sans-serif;
+}
+.OpenCart
+{
+  float: left;
+  margin-right: 30px;
+}
+.Magento
+{
+  float: left;
+  margin-right: 30px;
+}
+.Prestashop
+{
+  float: left;
+  margin-right: 30px;
+}
+.WooCommerce
+{
+  float: left;
+  margin-right: 30px;
+}

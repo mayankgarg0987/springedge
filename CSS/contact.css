@@ -26,3 +26,12 @@ input[type=text], select, textarea {
     background-color: #f2f2f2;
     padding: 20px;
   }
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+  
