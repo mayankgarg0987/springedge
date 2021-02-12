@@ -1,0 +1,24 @@
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+  #features
+  {
+    padding: 7% 15%;
+    text-align: center;
+  }
+  .feature-box
+  {
+    text-align: center;
+    padding: 5%;
+  }
+  .heading{
+    padding: 7% 15%;
+  }
+  #testimonials{
+    text-align: center;
+  }

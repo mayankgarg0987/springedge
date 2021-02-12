@@ -3,6 +3,7 @@ body
 margin: 0;
 text-align:left;
 font-family: sans-serif;
+
 }
 h1
 {
@@ -27,4 +28,10 @@ font-family: Tahoma, sans-serif;
 {
   float: left;
   margin-right: 30px;
+}
+.btn2:
+
+.btn2:hover
+{
+opacity: 1;  
 }
