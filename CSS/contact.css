@@ -19,12 +19,44 @@ input[type=text], select, textarea {
     border-radius: 4px;
     cursor: pointer;
   }
+
+  .HeadingLeft{
+    padding-left: 15%;
+  }
+
+  #est{
+    text-align: left;
+    font: normal normal normal 22px/23px Questrial;
+    letter-spacing: 6.6px;
+    color: #FF7E61;
+  }
+
+  .heading1{
+    text-align: left;
+    font: normal normal normal 90px/93px Questrial;
+    letter-spacing: 0px;
+    color: #242931;
+  }
+
+.iconCap{
+  text-align: center;
+  font: normal normal normal 24px/25px Questrial;
+  letter-spacing: 0px;
+  color: #00AA8A;
+  }
+
+  .belHead{
+    text-align: left;
+    font: normal normal normal 45px/46px Questrial;
+    letter-spacing: 0px;
+    color: #242931;
+  }
   
   /* Add a background color and some padding around the form */
   .container {
-    
+    padding-top: 4%;
+    padding-bottom: 4%;
     background-color: #f2f2f2;
-    padding: 50px;
   }
   #features
   {
@@ -40,5 +72,57 @@ input[type=text], select, textarea {
   {
     display: inline block;
   }
+
+  .formMargin{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 10%;
+    margin-right: 18%;
+  }
+
+  .formHeading{
+    text-align: left;
+    font: normal normal normal 90px/93px Questrial;
+    letter-spacing: 0px;
+    color: #242931;
+  }
   
-  
+  .formBelHeading{
+    text-align: left;
+    font: normal normal normal 20px/20px Questrial;
+    letter-spacing: 0px;
+    color: #242931;
+  }
+
+  .formsmlHeading{
+    text-align: left;
+    font: normal normal normal 20px/20px Questrial;
+    letter-spacing: 0px;
+    color: #242931;
+  }
+
+  #subButt{
+    background: #242931 0% 0% no-repeat padding-box;
+box-shadow: 3px 3px 15px #00000029;
+border-radius: 9px;
+text-align: left;
+font: normal normal normal 26px/26px Questrial;
+letter-spacing: 5.2px;
+color: #FFFFFF;
+  }
+
+  #subButt:hover{
+    background-color:#00AA8A;
+  }
+
+  /* input.larger {
+    width: 50px;
+    height: 50px;
+  } */
+
+  input[type=checkbox] {
+    transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    padding: 10px;
+}
