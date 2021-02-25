@@ -35,3 +35,9 @@
   justify-content: space-evenly;
   align-items: flex-start;
 }
+.btn1:hover {
+  background-color:mediumaquamarine;
+}
+.btn2:hover{
+  background-color: mediumaquamarine;
+}

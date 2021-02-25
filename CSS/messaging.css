@@ -20,6 +20,9 @@
   .heading{
     padding: 7% 15%;
   }
+  
+  
+  
   #testimonials{
     text-align: center;
     margin-top: 0%;
@@ -80,6 +83,7 @@
     margin-bottom: 2%;
   }
   
+  
   /* When moving the mouse over the submit button, add a darker green color */
   .btn2:hover {
     background-color:mediumaquamarine;
@@ -93,4 +97,18 @@
   }
  .btn2{
    margin-bottom: 5%;
+ }
+ .h61{
+  top: 211px;
+  left: 391px;
+  width: 370px;
+  height: 13px;
+  text-align: left;
+  font: normal normal normal 22px/23px Questrial;
+  letter-spacing: 6.6px;
+  color: #F9522C;
+  opacity: 1;
+ }
+ .bg-light{
+   width: 100%;
  }
