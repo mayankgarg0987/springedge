@@ -1,27 +1,130 @@
-.heading{
-    padding: 7% 15%;
-  }
+.Heading{
+  margin-left: 20%;
+}
+
+#FirstHeading{
+  text-align: left;
+  font: normal normal normal 22px/23px Questrial;
+  letter-spacing: 6.6px;
+  color: #00AA8A;
+}
+
+#mainHeading{
+  text-align: left;
+font: normal normal normal 90px/93px Questrial;
+letter-spacing: 0px;
+color: #242931;
+}
+
+#belHeading{
+  text-align: left;
+font: normal normal normal 45px/46px Questrial;
+letter-spacing: 0px;
+color: #242931;
+}
   
-  .row {
-    display: flex;
-  }
+#SecondHeading{
+  text-align: center;
+font: normal normal normal 51px/53px Questrial;
+letter-spacing: 0px;
+color: #242931;
+}
+
+/* #features{
+  padding: 7%;
+  text-align: center;
+} */
+
+.images{
+  margin-left: 25%;
+  margin-right: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.imgcap1{
+  text-align: center;
+font: normal normal normal 22px/23px Questrial;
+letter-spacing: 0px;
+color: #00AA8A;
+}
+
+.imgcap2{
+  text-align: center;
+font: normal normal normal 20px/20px Questrial;
+letter-spacing: 0px;
+color: #242931;
+}
+
+.swapHeading{
+  text-align: center;
+font: normal normal normal 72px/74px Questrial;
+letter-spacing: 0px;
+color: #00AA8A;
+}
+
+#swapContent{
+  text-align: center;
+font: normal normal normal 15px/25px Questrial;
+letter-spacing: 0px;
+color: #242931;
+}
+
+.swapContentLink{
+  text-align: center;
+font: normal normal normal 15px/25px Questrial;
+letter-spacing: 0px;
+color: #00AA8A;
+}
   
-  .column {
+#formHeading{
+  text-align: center;
+font: normal normal normal 49px/50px Questrial;
+letter-spacing: 0px;
+color: #00AA8A;
+}
+
+#formBelHeading{
+  text-align: center;
+font: normal normal normal 20px/20px Questrial;
+letter-spacing: 0px;
+color: #000000;
+}
+
+#submitButton{
+text-align: left;
+font: normal normal normal 26px/26px Questrial;
+letter-spacing: 5.2px;
+color: #FFFFFF;
+}
+
+.formBox{
+  height: 67px;
+  width: 55%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 13px;
+  text-align: left;
+  font: normal normal normal 26px/26px Questrial;
+  letter-spacing: 0px;
+  color: #696969;
+  opacity: 0.42;
+  padding-left: 3%;
+}
+
+.column {
     flex: 50%;
     padding: 5px;
-  }
-  #features
-  {
-    padding: 7% 35%;
-    text-align: center;
-  }
-  .feature-box
-  {
-    text-align: center;
-    padding: 5%;
-  }
-  #para
-  {
-    text-align: center;
-    
-  }
+}
+
+.feature-box{
+  text-align: center;
+  padding: 5%;
+}
+
+#para{
+  text-align: center;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+}
