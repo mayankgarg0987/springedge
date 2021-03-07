@@ -1,3 +1,7 @@
+  /* .marginLeft{
+    margin-left: 20%;
+  } */
+  
   .row {
     display: flex;
   }
@@ -9,6 +13,7 @@
 
   #est{
     text-align: left;
+    margin-left: 20%;
     font: normal normal normal 22px/23px Questrial;
     letter-spacing: 6.6px;
     color: #FF7E61;
@@ -20,10 +25,11 @@
   } */
 
   .heading1{
-    top: 252px;
+    margin-left: 20%;
+    /* top: 252px;
     left: 391px;
     width: 494px;
-    height: 93px;
+    height: 93px; */
     text-align: left;
     font: normal normal normal 90px/93px Questrial;
     letter-spacing: 0px;
@@ -32,6 +38,7 @@
 
   .belHead{
     text-align: left;
+    margin-left: 20%;
     font: normal normal normal 45px/46px Questrial;
     letter-spacing: 0px;
     color: #242931;
@@ -50,15 +57,15 @@
     color: #242931;
   }
 
-  #features
-  {
-    padding: 3% 15%;
+  .wrapper{
+    /* margin-left: 2%; */
     text-align: center;
     display: flex;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content: center;
+    /* align-items: flex-start; */
   }
   /* .feature-box
   {
@@ -68,6 +75,7 @@
 
   .smlHeading{
     text-align: left;
+    margin-left: 20%;
     font: normal normal normal 22px/23px Questrial;
     letter-spacing: 6.6px;
   }
@@ -78,6 +86,8 @@
     justify-content: space-evenly ;
     text-align: left;
     font: normal normal normal 30px/50px Questrial;
+    margin-left: 20%;
+    margin-right: 20%;
   }
 
   .butts{
@@ -87,8 +97,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
   }
 
   .belowHeading{
@@ -106,6 +116,7 @@
     font: normal normal normal 26px/26px Questrial;
     letter-spacing: 0px;
     color: #FFFFFF;
+    padding: 10px 10px 10px 10px;
   }
   #belButt1:hover{
     background-color:#00AA8A;
