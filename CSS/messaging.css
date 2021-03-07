@@ -1,20 +1,25 @@
-header{
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: -o-flex;
+#navbarText{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 70px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
 }
-.nav-area{
-  list-style: none;
+#navbarText li a {
+color:black;
 }
-.nav-area li{
-  display: inline-block;
-  padding: 0 15px;
-  text-transform: uppercase;
+#navbarText li a:hover{
+  color: rgb(214, 69, 24);
+}
+.btn1:hover
+{
+  background-color: mediumaquamarine;
+}
+
+#SecondHeading{
+  text-align: center;
+font: normal normal normal 51px/53px Questrial;
+letter-spacing: 0px;
+color: #242931;
 }
 
 
@@ -124,24 +129,51 @@ header{
  .bg-light{
    width: 100%;
  }
+ .swapHeading{
+  text-align: center;
+font: normal normal normal 72px/74px Questrial;
+letter-spacing: 0px;
+color: #00AA8A;
+}
+.content{
+  text-align: center;
+font: normal normal normal 15px/25px Questrial;
+letter-spacing: 0px;
+color: #242931;
+opacity: 1;
+}
+#FirstHeading{
+  text-align: left;
+  font: normal normal normal 22px/23px Questrial;
+  letter-spacing: 6.6px;
+  color: #00AA8A;
+}
  .heading1{
-   font-size: 90px 93px;
-   font: 90px/93px;
-   color: #242931;
-   letter-spacing: 0px;
-   opacity: 1;
-   font-weight: 632px;
-   height: 93px;
+  text-align: left;
+  font: normal normal normal 90px/93px Questrial;
+  letter-spacing: 0px;
+  color: #242931;
 
     
 }
 .subline{
-font-size: 45px 46px;
+  text-align: left;
+  font: normal normal normal 45px/46px Questrial;
+  letter-spacing: 0px;
+  color: #242931;
+}
+#formHeading{
+  text-align: center;
+font: normal normal normal 49px/50px Questrial;
 letter-spacing: 0px;
-color: #242931;
-opacity: 1;
-font: 45px/46px;
-font-weight: 626px;  
+color: #00AA8A;
+}
+
+#formBelHeading{
+  text-align: center;
+font: normal normal normal 20px/27px Segoe UI;
+letter-spacing: 0px;
+color: #000000;
 }
 .footer-dark {
   padding:50px 0;
@@ -151,28 +183,29 @@ font-weight: 626px;
 
 .footer-dark h3 {
   margin-top:0;
-  margin-bottom:12px;
-  font-weight:153px;
-  font-size:16px;
+  margin-bottom:20px;
+  font-weight:lighter;
+  font-size:18px;
+  opacity: 1;
+  font:26px/26px;
 }
 
 .footer-dark ul {
   padding:0;
   list-style:none;
-  line-height:1.6;
-  font-size:14px;
+  line-height:2;
+  font-size:18px;
+  font-weight:lighter;
   margin-bottom:0;
 }
 
 .footer-dark ul a {
-  color:inherit;
+  color: #FFFFFF;
   text-decoration:none;
-  opacity:0.6;
+  opacity:1;
 }
 
-.footer-dark ul a:hover {
-  opacity:0.8;
-}
+
 
 @media (max-width:767px) {
   .footer-dark .item:not(.social) {

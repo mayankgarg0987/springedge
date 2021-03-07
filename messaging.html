@@ -12,22 +12,41 @@
 <body>
 
   <!-- NAVBAR -->
-  <header>
-    <img class="logo" src="images/Logo.png" alt="">
-    <nav>
-      <ul class="nav-area">
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Company</a></li>
-      </ul>
-    </nav>
-    <a class="btn-area" href="#">Sign in</a>
-    <a class="btn-area" href="#">Contact</a>
-  </header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/Logo.png" alt="" width="250" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Company</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <button type="button" class="btn1 btn-outline-dark btn-lg btn-block" style="border: none; ;" >Sign In</button>
+          <button type="button" class="btn1 btn-dark btn-lg btn-block" style="border: none;">Contact Us</button>
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <hr class="border-top">
+
+  <br>
     
     <div class="heading">
       <p >
-      <h6 style="color: rgb(214, 69, 24);" class="h61">
+      <h6 style="color: rgb(214, 69, 24);" id="FirstHeading">
         PRODUCT > MESSAGING
       </h6>
       </p>
@@ -40,11 +59,12 @@
           <h3 class="subline">
               Connect and engage with your <br> customers globally.
           </h3>
-
       </div>
     </div>
       <section id="features">
-        <h3>The power of SMS communications</h3>
+        <div style="text-align: center;">
+          <h1><p id="SecondHeading">The power of SMS communications</p></h1>
+      </div>
         <div class="row">
           <div class="feature-box col-lg-4">
         <img src="images/Icons/Bulk SMS Api's.png" class="figure-img img-fluid rounded" alt="Bulk SMS Api's">
@@ -65,14 +85,11 @@
      
       </section>
           <section id= "testimonials">
-      <div>
-          <h1 style="color:mediumaquamarine;" class="heading2">
-              Transactional Messaging
-          </h1>
-      </div>
-      <hr style="width:600px; margin: auto;"/>
-      <div >
+            <h1 class="swapHeading" style="color:mediumaquamarine;"> Transactional Messaging</h1></p>
+            <hr style="height:2px;width:45%;margin:auto;border:none;"><br>
+      <div class="content" >
           <h6>
+            
             <div class="text1">
               <p>
                 SpringEdge's messaging rest APIs can be directly integrate into software, Web based applications and modules to meet many common<br>
@@ -96,17 +113,18 @@
             </div>
           </h6>
       </div>
+      
       <div class="button btn-md-left">
         <button type="button" class="btn btn-outline-dark">1</button>
         <button type="button" class="btn btn-outline-dark">2</button>
         <button type="button" class="btn btn-outline-dark">3</button>
       </div>
-      <div class="subheading">
-        <h1 style="color:mediumaquamarine;">  Request a trial</h1>
-      <p>
-          Just provide some preliminary information and our team will revert with messaging demo account.
-      </p>
+
     </div>
+    <div style="text-align: center;">
+      <h1 id="formHeading">Request a trial</h1><br>
+      <p id="formBelHeading">Just provide some preliminary information and our team will revert with messaging demo account.</p>
+  </div><br><br>
       <div id="form" style="text-align: center;">
         <label for="fname"></label>
         <input type="text" id="fname" name="firstname" placeholder="Your name">
@@ -127,8 +145,9 @@
       <footer>
           <div class="container">
               <div class="row">
-                  <div class="col-sm-6 col-md-3 item">
+                  <div class="col-sm-6 col-md-3  item">
                       <h3>COMPANY</h3>
+                      
                       <ul>
                           <li><a href="#">About</a></li>
                           <li><a href="#">Career</a></li>
@@ -155,8 +174,8 @@
                        
                     </ul>
                   </div>
-                  <div class="col-md-7 col-lg-8" style="margin-top: 10%;">
-                    <p>
+                  <div class="col-md-7 col-lg-8" style="margin-top: 5%; opacity: 0.8; font-weight: lighter; font-size: medium;">
+                    <p >
                       Copyright © 2020 Springedge Inc.
                     </p>
                   </div>
