@@ -86,32 +86,11 @@ letter-spacing: 0px;
 color: #00AA8A;
 }
 
-#formBelHeading{
-  text-align: center;
-font: normal normal normal 20px/20px Questrial;
-letter-spacing: 0px;
-color: #000000;
-}
-
 #submitButton{
 text-align: left;
 font: normal normal normal 26px/26px Questrial;
 letter-spacing: 5.2px;
 color: #FFFFFF;
-}
-
-.formBox{
-  height: 67px;
-  width: 55%;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
-  border-radius: 13px;
-  text-align: left;
-  font: normal normal normal 26px/26px Questrial;
-  letter-spacing: 0px;
-  color: #696969;
-  opacity: 0.42;
-  padding-left: 3%;
 }
 
 .column {
