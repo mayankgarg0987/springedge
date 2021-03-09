@@ -25,6 +25,6 @@
     opacity: 1
     
 }
-.btn-primary:hover{
-   color:  #00AA8A;
+.btn:hover{
+    color: rgb(255, 126, 97);;
 }
