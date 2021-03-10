@@ -107,3 +107,22 @@ color: #FFFFFF;
   text-align: center;
   background: #FFFFFF 0% 0% no-repeat padding-box;
 }
+
+#trialButton{
+  /* font: normal normal normal 26px/26px Questrial;
+  background-color: orangered;
+  height: 60%;
+  width: 13%;
+  letter-spacing: 1px; */
+  background: #FF7E61 0% 0% no-repeat padding-box;
+box-shadow: 3px 3px 15px #00000029;
+border-radius: 9px;
+}
+#trialButton:hover{
+  /* font: normal normal normal 26px/26px Questrial;
+  background-color: #00AA8A;
+  letter-spacing: 1px; */
+  background: #00AA8A 0% 0% no-repeat padding-box;
+box-shadow: 3px 3px 15px #00000029;
+border-radius: 9px;
+}
