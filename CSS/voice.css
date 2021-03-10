@@ -30,11 +30,6 @@ letter-spacing: 0px;
 color: #242931;
 }
 
-/* #features{
-  padding: 7%;
-  text-align: center;
-} */
-
 .images{
   margin-left: 25%;
   margin-right: 25%;
@@ -78,46 +73,6 @@ font: normal normal normal 15px/25px Questrial;
 letter-spacing: 0px;
 color: #00AA8A;
 }
-  
-#formHeading{
-  text-align: center;
-font: normal normal normal 49px/50px Questrial;
-letter-spacing: 0px;
-color: #00AA8A;
-}
-
-#formBelHeading{
-  text-align: center;
-font: normal normal normal 20px/20px Questrial;
-letter-spacing: 0px;
-color: #000000;
-}
-
-#submitButton{
-text-align: left;
-font: normal normal normal 26px/26px Questrial;
-letter-spacing: 5.2px;
-color: #FFFFFF;
-}
-
-.formBox{
-  height: 67px;
-  width: 55%;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
-  border-radius: 13px;
-  text-align: left;
-  font: normal normal normal 26px/26px Questrial;
-  letter-spacing: 0px;
-  color: #696969;
-  opacity: 0.42;
-  padding-left: 3%;
-}
-
-.column {
-    flex: 50%;
-    padding: 5px;
-}
 
 .feature-box{
   text-align: center;
@@ -127,4 +82,15 @@ color: #FFFFFF;
 #para{
   text-align: center;
   background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+#trialButton{
+  background: #FF7E61 0% 0% no-repeat padding-box;
+  box-shadow: 3px 3px 15px #00000029;
+  border-radius: 9px;
+}
+#trialButton:hover{
+  background: #00AA8A 0% 0% no-repeat padding-box;
+  box-shadow: 3px 3px 15px #00000029;
+  border-radius: 9px;
 }

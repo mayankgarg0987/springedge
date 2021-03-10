@@ -1,3 +1,20 @@
+#navbarText{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
+}
+#navbarText li a {
+color:black;
+}
+#navbarText li a:hover{
+  color: rgb(214, 69, 24);
+}
+.btn1:hover
+{
+  background-color: mediumaquamarine;
+}
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
