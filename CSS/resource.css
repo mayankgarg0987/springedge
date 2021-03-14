@@ -5,6 +5,23 @@ text-align:left;
 font-family: sans-serif;
 
 }
+#navbarText{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
+  font-weight: 2%;
+}
+#navbarText li a {
+color:black;
+}
+#navbarText li a:hover{
+  color: rgb(214, 69, 24);
+}
+.btn1:hover
+{
+  background-color: mediumaquamarine;
+}
 h1
 {
 font-family: Tahoma, sans-serif;
