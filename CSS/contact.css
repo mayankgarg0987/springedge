@@ -3,13 +3,20 @@
   flex-direction: row;
   justify-content: space-evenly;
   color: white;
+  font-weight: 2%;
 }
 #navbarText li a {
 color:black;
+opacity: 0.6;
 }
 #navbarText li a:hover{
   color: rgb(214, 69, 24);
 }
+.btn1:hover
+{
+  background-color: mediumaquamarine;
+}
+
 .btn1:hover
 {
   background-color: mediumaquamarine;

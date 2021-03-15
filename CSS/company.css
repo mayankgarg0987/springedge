@@ -107,9 +107,10 @@
   }
 
   #belButt1{
-    background: #242931 0% 0% no-repeat padding-box;
+    background: #FF7E61 0% 0% no-repeat padding-box;
     box-shadow: 3px 3px 15px #00000029;
     border-radius: 9px;
+    border-color: #FF7E61;
     text-align: left;
     font: normal normal normal 26px/26px Questrial;
     letter-spacing: 0px;
@@ -118,6 +119,7 @@
   }
   #belButt1:hover{
     background-color:#00AA8A;
+    border-color: #00AA8A;
   }
 
   #belButt2{
@@ -129,4 +131,9 @@
     font: normal normal normal 26px/26px Questrial;
     letter-spacing: 0px;
     color: #242931;
+  }
+  #belButt2:hover{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    color: #00AA8A;
+    border-color: #00AA8A;
   }
