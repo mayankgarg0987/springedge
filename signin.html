@@ -1,14 +1,111 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Sign Up Form</title>
-  <link rel="stylesheet" href="CSS/signin.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign IN Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/signin.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://www.fonts.com/font/microsoft-corporation/segoe-ui-symbol?QueryFontType=Web&src=GoogleWebFonts" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <style> 
+      h4 { 
+          display: flex; 
+          flex-direction: row; 
+      } 
+        
+      h4:before, 
+      h4:after { 
+          content: ""; 
+          flex: 1 1; 
+          border-bottom: 2px solid #000; 
+          margin: auto; 
+      } 
+        
+      
+  </style> 
 </head>
 
-<body>
+<body> 
+  <section class="container-fluid">
+    <!-- row and justify-content-center class is used to place the form in center -->
+    <section class="row justify-content-center">
+      <section class="col-12 col-sm-6 col-md-4">
+        <form class="form-container">
+        <div class="form-group">
+          <img src="images/HD_se_logo_png.png" class="img" alt="" width="250" height="80">
+          <form>
+            <p id="subl">
+              Create Your account
+            </p>
+            <button type="button" class="signup-btn"><span> Continue with Google</span></button>
+            <hr class="hr-text" data-content="OR">
+          <div class="row">
+            <div class="col-xs-6 col-md-6">
+                <input class="form-control" name="firstname" placeholder="First Name" type="text"
+                    required autofocus />
+            </div>
+            <div class="col-xs-6 col-md-6">
+                <input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
+            </div>
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="InputPassword1">Business email</label>
+          <input type="Business email" class="form-control" id="InputPassword1" placeholder="Business email">
+        </div>
+        <div class="form-group">
+          <label for="InputPassword1">Password</label>
+          <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+          <label for="InputPassword1">Country</label>
+          <input type="Country" class="form-control" id="InputPassword1" placeholder="Country">
+        </div>
+        
+        
+      <p><span><input type="checkbox"></span>
+        I agree to Spring Edge's terms & conditions and privacy policy
+      </p>
+      <p><span><input type="checkbox"></span>
+        I agree to to recieve newsletters,promotional content, offers and events from SpringEdge
+      </p>
+      <button type="button" class="btn2"> Register</span> </button>
+      <hr>
 
+      <p>
+        Already have an account ? <a href="#">Login</a>
+      </p>
+    </form>
+        
+      </section>
+    </section>
+  </section>
+<!-- Login form creation ends -->
+
+  <!--
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
+            <legend><a href="http://www.jquery2dotnet.com"><i class="glyphicon glyphicon-globe"></i></a> Sign up!</legend>
+            <form action="#" method="post" class="form" role="form">
+            <div class="row">
+                <div class="col-xs-6 col-md-6">
+                    <input class="form-control" name="firstname" placeholder="First Name" type="text"
+                        required autofocus />
+                </div>
+                <div class="col-xs-6 col-md-6">
+                    <input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
+                </div>
+            </div>
+            <input class="form-control" name="youremail" placeholder="Your Email" type="email" />
+            <input class="form-control" name="reenteremail" placeholder="Re-enter Email" type="email" />
+            <input class="form-control" name="password" placeholder="New Password" type="password" />
+            <label for="">
+                Birth Date</label> -->
+  <!--
   <div class="sign-up-form">
     <h1>Spring edge</h1>
     <form>
@@ -34,10 +131,9 @@
       <p>
         Already have an account ? <a href="#">Login</a>
       </p>
-
-
     </form>
-  </div>
+  </div>-->
+
 </body>
 
 </html>
