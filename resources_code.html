@@ -3,53 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage for Springedge new website</title>
+    <title>Resources_code Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/resources_code.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body style="font-family: Questrial;">
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid" padding-left=80px>
+   <!-- NAVBAR -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="https://wallpapercave.com/wp/LmgWimZ.jpg" alt="" width="90" height="40">
+        <img src="images/HD_se_logo_png.png" alt="" width="250" height="80">
       </a>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Products</a>
+          <li class="nav-item px-3">
+            <a class="nav-link" aria-current="page" href="#">Messaging</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-3">
+            <a class="nav-link" aria-current="page" href="#">Voice</a>
+          </li>
+          <li class="nav-item px-3">
             <a class="nav-link" href="#">Resources</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-3">
             <a class="nav-link" href="#">Company</a>
           </li>
-          <div class="button btn-md-left">
-          <button type="button" class="btn btn-outline-dark">Sign In</button>
-          <button type="button" class="btn btn-dark">Contact Us</button>
-        </div>
-        <nav class="navbar navbar-dark bg-primary">
-          <!-- Navbar content -->
-        </nav>
-        
-      </nav> 
+        </ul>
+        <span class="navbar-text">
+          <button type="button" class="btn1 btn-outline-dark btn-lg " style="border: none; ;" >Sign In</button>
+
+        </span>
+      </div>
     </div>
     
-    <div class="heading">
-      <p>
-      <h6>
-        RESOURCES > DEVELOPER CODE
-      </h6>
-      </p>
-      <p>
-          <h1 class="heading1">
-              Copy & code
-          </h1>
-      </p>
+  </nav>
+
+  <hr class="border-top">
+  
+    
+  <div class="heading">
+    <p >
+    <h6 id="FirstHeading">
+      RESOURCES > DEVELOPER CODE
+    </h6>
+    </p>
+    <p>
+        <h2 class="heading1">
+          Copy & code
+        </h2>
+    </p><br>
+  <div class="text">
       <div>
       <p>
           <h5>
@@ -66,126 +76,245 @@
               </h5>
           </p>
       </div>
-     <div>
+  </div><br>
+
+  <div class="eight columns">
+    <!-- Accordion-->		
+<div class="tabs_1">
+<dl class="tabs">
+  <dd class=""><a href="#s1">CURL</a></dd>
+  <dd class=""><a href="#s2">PHP</a></dd>
+  <dd class="active"><a href="#s3">Python</a></dd>
+  <dd class=""><a href="#s4">Ruby</a></dd>
+  <dd class=""><a href="#s5">JAVA</a></dd>
+  <dd class=""><a href="#s7">GO Lang</a></dd>
+  <dd class=""><a href="#s8">NodeJS</a></dd>
+</dl>
+</div>
+<div class="tab_2">
+
+<ul class="tabs-content">
+  <li class="" id="s1Tab" style="display: none;">
+  
+  <pre>curl http://web.springedge.com/api/web/send  \
+-F apikey=65ats54oxxxxxxxxxxxxxxxxxxxx \
+-F sender=SEDEMO \
+-F to=919020xxxxxx \
+-F message=Hi, this is a test message \
+-F format=json
+  </pre>
+  </li>
+  <li id="s2Tab" class="" style="display: none;">
+    <pre>$message = urlencode('Hi, this is a test message');
+$sender = 'SEDEMO'; 
+$apikey = '65ats54oxxxxxxxxxxxxxxxxxxxx';
+$baseurl = 'http://web.springedge.com/api/web/send?apikey='.$apikey;
+
+$url = $baseurl.'&amp;sender='.$sender.'&amp;to='.$mobileno.'&amp;message='.$message;    
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_POST, false);
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$response = curl_exec($ch);
+curl_close($ch);
+</pre>
+  </li>
+  <li id="s3Tab" style="display: block;" class="active">
+    <pre>import requests
+
+message = 'Hi+this+is+a+test+message'
+mobileno= '919035xxxxxx'
+sender = 'SEDEMO'
+apikey = '65ats54oxxxxxxxxxxxxxxxxxxxx'
+
+baseurl = 'http://web.springedge.com/api/web/send/?apikey='+apikey
+url= baseurl+'&amp;sender='+sender+'&amp;to='+mobileno+'&amp;message='+message+'&amp;format=json'
+response = requests.get(url)
+
+print('Response:', response, 'request.')
+    </pre>
+  </li>
+  <li id="s4Tab" style="display: none;" class="">
+    <pre>require 'net/http'
+message = URI::encode('Hi, this is a test message')
+mobileno = '91903xxxxxxxx'
+senderid = 'SEDEMO'
+apikey = '65ats54oxxxxxxxxxxxxxxxxxxxx'
+baseurl = 'http://web.springedge.com/api/web/send/?apikey='+apikey
+url = URI.parse(baseurl+'&amp;sender='+senderid+'&amp;to='+mobileno+'&amp;message='+message)
+req = Net::HTTP::Get.new(url.to_s)
+res = Net::HTTP.start(url.host, url.port) {|http|
+http.request(req)
+}
+puts res.body
+    </pre>
+  </li>
+  <li id="s5Tab" style="display: none;" class="">
+    <pre>message=URLEncoder.encode('Hi this is a test message', "UTF-8");
+baseurl = "http://web.springedge.com/api/web/send/?apikey=65axxxxxxxxxxxxx";
+
+URL url = new URL(baseurl+"&amp;sender=SEDEMO&amp;to=919035xxxxxx&amp;message=Test+message");
+
+HttpURLConnection con = (HttpURLConnection) url.openConnection();
+con.setRequestMethod("GET");
+con.setDoOutput(true);
+con.getOutputStream();
+con.getInputStream();
+BufferedReader rd;
+    </pre>
+  </li>
+  <li id="s6Tab" style="display: none;">
+    <pre>using System;
+using System.IO;
+using System.Net;
+public class Program{
+public static void Main(){
+    string mobileno = "9190xxxxxxxx";
+    string baseurl = "https://instantalerts.co/api/web/send/?apikey=65ats54oxxxxxxxxxxxxxxxxxxxx";
+    string url = baseurl+"&amp;sender=SEDEMO&amp;to="+mobileno+"&amp;message=Hi,this is a test message&amp;format=json";
+    WebRequest request = HttpWebRequest.Create(url);
+    request.GetResponse();
+}
+}
+    </pre>
+  </li>
+  <li id="s7Tab" class="" style="display: none;">
+    <pre>package main
+import ( "net/http" "net/url" "fmt" "strings" )
+func main() {
+v := url.Values{}
+v.Set("to","919035xxxx")
+v.Set("apikey","API_KEY_HERE")
+v.Set("sender","SEDEMO")
+v.Set("message","Hello, this is a test sms")
+rb := *strings.NewReader(v.Encode())
+client := &amp;http.Client{}
+req, _ := http.NewRequest("POST", "http://web.springedge.com/api/web/send/", &amp;rb)
+resp, _ := client.Do(req)
+}
+    </pre>
+  </li>
+  <li id="s8Tab" style="display: none;" class="">
+    <pre>npm install springedge
+var springedge = require('springedge');
+var params = { 
+'sender': 'SEDEMO', 'apikey': 'API_KEY_HERE', 'to': [ '9190xxxxxxxx'],
+'message': 'Hi, this is a test message', 'format': 'json' };
+springedge.messages.send(params, 5000, function (err, response) {
+if (err) {
+return console.log(err);
+}
+console.log(response);
+});
+    </pre>
+  </li>
+</ul>
+<!-- /Accordion-->
+</div>
+<br>
+</div>
+
+  
+     <div id="boxline">
          <h5>
              Learn More about differnt languages and their api integration code
 
          </h5>
      </div>
 
-     <div class="box">
-        <div>
-            <img src="images/OpenCart.png" alt=""  >
-        </div>
-        <div>
-            <img src="images/Magento.png" alt=""  >
-        </div>
-        <div>
-            <img src="images/WooCommerce.png" alt=""  >
-        </div>
-        <div>
-            <img src="images/Prestashop.png" alt=""  >
-        </div>
+     <div class="row1">
+      <div class=" column">
+        <img class="img-responsive image-resize" id="images" src="images/OpenCart.png"  alt="" />
+      </div>
+      <div class="column">
+        <img class="img-responsive image-resize" id="images" src="images/Magento.png" alt="" />
+      </div>
+      <div class="column">
+        <img class="img-responsive image-resize" id="images" src="images/WooCommerce.png"  alt="" />
+      </div>
+      <div class="column">
+        <img class="img-responsive image-resize" id="images" src="images/Prestashop.png"  alt="" />
+      </div>
+    </div>
+  
         
-      </div>
-        
-      <div class="heading2">
-      <h2>
-          Need an integration?
-      </h2>
-      </div>
-      <div>         
-      <h4>
-          We're always happy to bring functionality to you wherever you need it.
-      </h4>
-
-      </div>
-      <div style="text-align: center;">
-        <button type="button" class="btn btn-dark btn-lg">Request Integration</button>
+      <div >
+        <p>
+          <h1 class="head3">
+            Need an integration?
+        </h1>
+        </p>
+        <p>
+          <h4>
+            We’re happy to bring functionality to you wherever you need it.
+          </h4>
+          
+        </p>
       </div>
       
 
-      <footer class="bg-dark text-white pt-5 pb-4">
-        <div class="container text-center text-md-left">
-          <div class="container text-center text-md-left">
-            <div class="row text-centre text-md-left">
-              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h5>
-                  COMPANY
-                </h5>
-                <p>
-                  <a href="#" class="text-white" style="text-decoration: none;">About</a>
-                </p>
-                <p>
-                  <a href="#" class="text-white" style="text-decoration: none;">Careers</a>
-                </p> 
-                <p>
-                  <a href="#" class="text-white" style="text-decoration: none;">Support</a>
-                </p>
-                <p>
-                  <a href="#" class="text-white" style="text-decoration: none;">Blog</a>
-                </p>
-                <p>
-                  <a href="#" class="text-white" style="text-decoration: none;">FAQs</a>
-                </p>
-            
-              </div>
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h5>
-                  SERVICES
-                </h5>
-                <p>
-                  <a href="#" class="text-white" style="text-decoration: none;">2 Way messaging</a>
-                </p>
-                <p>
-                  <a href="#" class="text-white" style="text-decoration: none;">Bulk sms service</a>
-                </p> 
-                <p>
-                  <a href="#" class="text-white" style="text-decoration: none;">Developers API</a>
-                </p>
-                <p>
-                  <a href="#" class="text-white" style="text-decoration: none;">Sms Add-Ons</a>
-                </p>
-      
-              </div>
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h5>
-                USEFUL LINKS
-              </h5>
-              <p>
-                <a href="#" class="text-white" style="text-decoration: none;">Terms of use</a>
-              </p>
-              <p>
-                <a href="#" class="text-white" style="text-decoration: none;">Site Map</a>
-              </p> 
-              <p>
-                <a href="#" class="text-white" style="text-decoration: none;">Privacy Policy</a>
-              </p>
-              </div>
-              <hr class="mb=4">
-              <div class="row allign-items-center">
-              <div class="col-md-7 col-lg-8">
-                <p>
-                  Copyright © 2020 Springedge Inc.
-                </p>
-              </div>
-              <div class="col-md-5 col-lg-4">
-                <div class="text-center text -md-right">
-                  <ul class="list-unstyled list-inline">
-                    <li class="list-inline-item">
-                    <a class="footer-link" href="https://www.facebook.com/"></a>
-                    </li>
-      
-                  </ul>
-      
+    <div class="text-center">
+        <button type="button" class="btn3 btn-dark btn-lg" style="border: none; ">Request Integration</button>
+      </div>
+     </div>
+     
+    </div>
+     <div class="footer-dark">
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-6 col-md-3  item">
+                      <h3>COMPANY</h3>
+                      
+                      <ul>
+                          <li><a href="#">About</a></li>
+                          <li><a href="#">Career</a></li>
+                          <li><a href="#">Support</a></li>
+                          <li><a href="#">Blog</a></li>
+                          <li><a href="#">FAQs</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-3 item">
+                      <h3>SERVICES</h3>
+                      <ul>
+                          <li><a href="#">2 Way messaging </a></li>
+                          <li><a href="#"> Bulk sms service </a></li>
+                          <li><a href="#">Developers API </a></li>
+                          <li><a href="#">Sms Add-Ons </a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-6  col-md-3 item">
+                      <h3>USEFUL LINKS</h3>
+                      <ul>
+                        <li><a href="#">Terms of use </a></li>
+                        <li><a href="#"> Site Map </a></li>
+                        <li><a href="#">Privacy Policy </a></li>
+                       
+                    </ul>
+                  </div>
+                  <div class="col-md-7 col-lg-8" style="margin-top: 5%; opacity: 0.8; font-weight: lighter; font-size: medium;">
+                    <p >
+                      Copyright © 2020 Springedge Inc.
+                    </p>
+                  </div>
+                  <div class="col-md-5 col-lg-4">
+                    <div class="text-center text -md-right">
+                  <ul class="nav">
+                    
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link pl-0"><i class="fa fa-facebook fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                   
+                </ul>
                 </div>
-      
-              </div>
-      
-      
-            </div>
-             
-            </div>
+                </div>
           </div>
-        </div>
-        </footer>
+      </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+     </body>
+     </html>
+      
+
+     
