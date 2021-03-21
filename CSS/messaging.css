@@ -3,16 +3,26 @@
   flex-direction: row;
   justify-content: space-evenly;
   color: white;
+  font-weight: 2%;
 }
 #navbarText li a {
 color:black;
+opacity: 0.6;
 }
 #navbarText li a:hover{
   color: rgb(214, 69, 24);
+   
 }
 .btn1:hover
 {
   background-color: mediumaquamarine;
+}
+.border-top{
+ 
+  border-top: 0px;
+  border-bottom: 2px solid #696969;
+  margin-bottom: 0;
+  box-shadow: 0 20px 20px -20px #333;
 }
 
 #SecondHeading{
@@ -76,9 +86,23 @@ margin-top:0%
   }
   .text3{
     margin-top: 2%;
+    margin-bottom: 12%;
+    font-size: small;
+    line-height: 160%;
+    text-decoration: gray;
+  }
+  .text31{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: small;
+    line-height: 160%;
+    text-decoration: gray;
+  }
+  .text4{
+    margin-top: 2%;
     margin-bottom: 8%;
     font-size: small;
-    line-height: 200%;
+    line-height: 160%;
     text-decoration: gray;
   }
   .button{
@@ -136,6 +160,12 @@ font: normal normal normal 72px/74px Questrial;
 letter-spacing: 0px;
 color: #00AA8A;
 }
+.swapHeading3{
+  text-align: center;
+font: normal normal normal 54px/56px Questrial;
+letter-spacing: 0px;
+color: #00AA8A;
+}
 .content{
   text-align: center;
 font: normal normal normal 15px/25px Questrial;
@@ -163,18 +193,29 @@ opacity: 1;
   letter-spacing: 0px;
   color: #242931;
 }
-#formHeading{
+h4{
   text-align: center;
-font: normal normal normal 49px/50px Questrial;
-letter-spacing: 0px;
-color: #00AA8A;
-}
-
-#formBelHeading{
-  text-align: center;
-font: normal normal normal 20px/27px Segoe UI;
+font: normal normal normal 25px/33px Segoe UI;
 letter-spacing: 0px;
 color: #000000;
+opacity: 1;
+margin-bottom: 4%;
+}
+.btn2{
+  background: #FF7E61 0% 0% no-repeat padding-box;
+box-shadow: 3px 3px 15px #00000029;
+border-radius: 7px;
+opacity: 1;
+}
+.btn2:hover{
+  background-color:#00AA8A;
+}
+.btn2 span{
+  text-align: left;
+font: normal normal normal 26px/26px Questrial;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
 }
 .footer-dark {
   padding:50px 0;
