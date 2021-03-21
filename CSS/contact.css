@@ -138,14 +138,26 @@ letter-spacing: 5.2px;
 color: #FFFFFF;
   }
 
-  #subButt:hover{
+  /* #subButt:hover{
     background-color:#00AA8A;
-  }
+  } */
 
   /* input.larger {
     width: 50px;
     height: 50px;
   } */
+  #trialButton{
+    background: #FF7E61 0% 0% no-repeat padding-box;
+    box-shadow: 3px 3px 15px #00000029;
+    border-radius: 9px;
+    border:  #FF7E61;
+  }
+  #trialButton:hover{
+    background: #00AA8A 0% 0% no-repeat padding-box;
+    box-shadow: 3px 3px 15px #00000029;
+    border-radius: 9px;
+    border: #00AA8A;
+  }
 
   input[type=checkbox] {
     transform: scale(1.5);

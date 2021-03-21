@@ -88,9 +88,11 @@ color: #00AA8A;
   background: #FF7E61 0% 0% no-repeat padding-box;
   box-shadow: 3px 3px 15px #00000029;
   border-radius: 9px;
+  border:  #FF7E61;
 }
 #trialButton:hover{
   background: #00AA8A 0% 0% no-repeat padding-box;
   box-shadow: 3px 3px 15px #00000029;
   border-radius: 9px;
+  border: #00AA8A;
 }
